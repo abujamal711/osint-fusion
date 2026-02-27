@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard - OSINT Fusion</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Dashboard</h1>
+            <button id="logoutBtn" class="btn" style="float:right;">Logout</button>
+            <p>Welcome, <span id="usernameDisplay"></span></p>
+        </div>
+        <div class="card">
+            <h2>New Search</h2>
+            <form id="searchForm">
+                <select id="type" required>
+                    <option value="email">Email</option>
+                    <option value="phone">Phone Number</option>
+                    <option value="username">Username</option>
+                </select>
+                <input type="text" id="target" placeholder="Enter target" required>
+                <button type="submit" class="btn">Search</button>
+            </form>
+        </div>
+        <div class="card">
+            <h2>Current Result</h2>
+            <pre id="result" class="result-box">No results yet.</pre>
+        </div>
+        <div class="card">
+            <h2>Search History</h2>
+            <div id="history"></div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('usernameDisplay').textContent = localStorage.getItem('username') || 'User';
+    </script>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
