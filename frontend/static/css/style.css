@@ -1,0 +1,58 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #0a0f1e;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.header {
+    background: #1a1f30;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+h1, h2 {
+    color: #00d4ff;
+}
+.btn {
+    background: #00d4ff;
+    color: #0a0f1e;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn:hover {
+    background: #00b8cc;
+}
+input, select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background: #1a1f30;
+    color: #fff;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.card {
+    background: #1a1f30;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+.result-box {
+    background: #111624;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    font-family: monospace;
+}
